@@ -30,7 +30,7 @@ class DeleteDialogue extends StatelessWidget {
                   color: Colors.white, fontWeight: FontWeight.bold),
             )),
              TextButton(
-            onPressed: onCancel,
+            onPressed: onDelete,
             child: Text(
               'Delete',
               style: GoogleFonts.crimsonPro(

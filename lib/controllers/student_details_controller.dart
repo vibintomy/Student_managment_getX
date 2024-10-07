@@ -42,11 +42,11 @@ class StudentDetailsController extends GetxController {
             ),
           ),
           snackPosition: SnackPosition.BOTTOM,
-          duration: Duration(seconds: 3),
+          duration:const Duration(seconds: 3),
           snackStyle: SnackStyle.FLOATING,
           backgroundColor: Colors.white,
           colorText: Colors.black,
-          margin: EdgeInsets.all(16),
+          margin:const EdgeInsets.all(16),
           borderRadius: 8,
           isDismissible: true,
         );

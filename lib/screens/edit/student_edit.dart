@@ -48,9 +48,11 @@ class StudentEdit extends StatelessWidget {
                             pickImage();
                           },
                           child: Obx(()=> Container(
+                          
                             height: 150,
                             width: 150,
                             decoration: BoxDecoration(
+                              color: Colors.green,
                               borderRadius: BorderRadius.circular(100),
                               image: DecorationImage(image: controller.profileimgpath.isNotEmpty
                               ?FileImage(File(controller.profileimgpath.value))
@@ -58,8 +60,9 @@ class StudentEdit extends StatelessWidget {
                               ? FileImage(File(student.profiling))
                               :const  NetworkImage( "https://banner2.cleanpng.com/20180802/gyc/kisspng-computer-icons-shape-user-person-scalable-vector-g-imag-icons-3-617-free-vector-icons-page-4-5b62ba06c36336.0063904315331968068003.jpg"),
                               fit: BoxFit.cover)
-                              
+                            
                             ),
+                            
                           )),
                         ),
                         kheight,
