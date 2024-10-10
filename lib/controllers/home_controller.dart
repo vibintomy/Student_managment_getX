@@ -8,6 +8,7 @@ class HomeController extends GetxController {
   RxList<Student> filteredstudents = <Student>[].obs;
 
   late DatabaseHelper databaseHelper;
+  
   @override
   void onInit() {
     super.onInit();

@@ -7,7 +7,7 @@ import 'package:student_management_getx/widgets/spalsh_screen.dart';
 
 
 void main() {
-  runApp( MyApp());
+  runApp( const MyApp());
 }
 
 class MyApp extends StatelessWidget {
@@ -34,7 +34,7 @@ class MyApp extends StatelessWidget {
       getPages: [
       GetPage(name: '/Home', page: ()=> Home()),
         GetPage(name: '/Addstudent', page: ()=>AddStudents()),
-        GetPage(name: '/SplashScreen', page: ()=>SpalshScreen())
+        GetPage(name: '/SplashScreen', page: ()=> const SpalshScreen())
       ],
 
     );

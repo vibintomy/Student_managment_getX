@@ -18,17 +18,20 @@ class StudentEditController extends GetxController {
   late String initSchoolName;
   late int initAge;
   late int initPhone;
+  late String initImg;
 
   void initializeData(Student student) {
     initName = student.name;
     initSchoolName = student.school;
     initAge = student.age;
     initPhone = student.phone;
+    initImg = student.profiling;
 
     nameController.text = initName;
     schoolNameController.text = initSchoolName;
-    ageController.text = initName.toString();
+    ageController.text = initAge.toString();
     phoneController.text = initPhone.toString();
+    profileimgpath.value = initImg;
   }
 
   void updateProfilePicPath(String path) {
@@ -57,16 +60,18 @@ class StudentEditController extends GetxController {
           'Student data updated successfully',
           style: TextStyle(color: Colors.black),
         ),
-        titleText:const Text('Success',style: TextStyle(color: Colors.green,fontSize: 17,fontWeight: FontWeight.bold),),
+        titleText: const Text(
+          'Success',
+          style: TextStyle(
+              color: Colors.green, fontSize: 17, fontWeight: FontWeight.bold),
+        ),
         snackPosition: SnackPosition.BOTTOM,
-        duration:const Duration(seconds: 4),
+        duration: const Duration(seconds: 4),
         snackStyle: SnackStyle.FLOATING,
         backgroundColor: Colors.white,
         colorText: Colors.black,
-        margin:const EdgeInsets.all(16),
+        margin: const EdgeInsets.all(16),
         borderRadius: 8,
-        isDismissible: true
-        );
-        
+        isDismissible: true);
   }
 }
