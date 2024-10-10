@@ -21,4 +21,4 @@ BoxDecoration maincolor2 =const BoxDecoration(
   end: Alignment.bottomCenter,
 ));
 
-Color colors1 = Colors.amber;
+Color colors1 = Colors.yellow;

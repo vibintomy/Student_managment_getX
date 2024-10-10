@@ -21,7 +21,7 @@ class StudentEdit extends StatelessWidget {
     controller.initializeData(student);
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.yellow,
         title:const Text(
           'Edit student',
         ),

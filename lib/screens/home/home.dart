@@ -119,13 +119,13 @@ class Home extends StatelessWidget {
           }),
         ),
         floatingActionButton: FloatingActionButton(
-          backgroundColor: Colors.yellow,
+          backgroundColor: Colors.black,
           onPressed: () {
             Get.to(AddStudents())!.then((value)=>controller.refreshStudentList());
           },
           child: const Icon(
             Icons.add,
-            color: Colors.red,
+            color: Colors.yellow,
           ),
         ));
   }

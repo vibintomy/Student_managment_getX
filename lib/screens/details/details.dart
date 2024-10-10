@@ -22,13 +22,13 @@ class StudentDetails extends StatelessWidget {
       appBar: AppBar(
         title:const Text('Students Details'),
         titleTextStyle: titleStyle,
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.yellow,
         centerTitle: true,
       ),
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: maincolor,
+        decoration: maincolor2,
         child: Center(
           child: SingleChildScrollView(
             child: Column(
